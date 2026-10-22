@@ -19,7 +19,7 @@ build.bat
 Workshop.exe
 ```
 
-In VS Code: `Ctrl+Shift+B` builds, and the "Run Workshop" task builds then launches.
+Alternatively in VS Code: `Ctrl+Shift+B` builds, and the "Run Workshop" task builds then launches.
 
 ## How the build works
 
@@ -39,13 +39,12 @@ g++ -g -std=c++17 -Iinclude src/main.cpp src/glad.c -Llib -lglfw3dll -o Workshop
 | `-Llib -lglfw3dll` | Look in `lib/` and link against `libglfw3dll.a`, the import library for `glfw3.dll`. |
 | `-o Workshop.exe` | Name of the output. |
 
-The result is `Workshop.exe` in this folder. It links to GLFW dynamically, so `glfw3.dll` must sit next to the exe when you run it. OpenGL itself comes from your graphics driver; nothing to install.
-
-Adding more source files: list them after `src/main.cpp` in `build.bat`. Nothing else changes.
+The result is `Workshop.exe` in this folder that runs and shows your game!
 
 ## Where to work
 
 `src/main.cpp` is the only project file. Put your OpenGL calls after the `Your rendering goes here` comment in the main loop.
+When adding more source files list them after `src/main.cpp` in `build.bat`.
 
 ## Layout
 
