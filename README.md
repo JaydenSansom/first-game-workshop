@@ -8,6 +8,8 @@ Minimal GLFW + glad starter. Opens an 800x800 window with an OpenGL context and 
 - MSYS2 with the UCRT64 toolchain: https://www.msys2.org
   After installing, open the MSYS2 UCRT64 shell and run:
   `pacman -S mingw-w64-ucrt-x86_64-gcc`
+  `pacman -S mingw-w64-ucrt-x86_64-box2d`
+  'pacman -S mingw-w64-ucrt-x86_64-sfml'
   (`build.bat` expects g++ at `C:\msys64\ucrt64\bin`; edit the PATH line if you installed elsewhere.)
 
 ## Build and run
@@ -26,7 +28,7 @@ Alternatively in VS Code: `Ctrl+Shift+B` builds, and the "Run Workshop" task bui
 `build.bat` runs one g++ command:
 
 ```
-g++ -g -std=c++17 -Iinclude src/main.cpp src/glad.c -Llib -lglfw3dll -o Workshop.exe
+g++ -g -std=c++17 -Iinclude src/main.cpp src/glad.c -Llib -lglfw3dll -o Workshop.exe -static
 ```
 
 | Part | What it does |
