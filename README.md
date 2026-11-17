@@ -31,6 +31,8 @@ Alternatively in VS Code: `Ctrl+Shift+B` builds, and the "Run Workshop" task bui
 g++ -g -std=c++17 -DSFML_STATIC -IC:/msys64/ucrt64/include src/main.cpp -LC:/msys64/ucrt64/lib -static -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lbox2d -lfreetype -lopengl32 -lwinmm -lgdi32 -luser32 -ladvapi32 -o Workshop.exe
 ```
 
+## Presentation Link
+https://docs.google.com/presentation/d/1gpsXO-tR8n_d50GI2sfvbXx2imG2WZdVZKiK63HY0hQ/edit?usp=sharing
 The result is `Workshop.exe` in this folder that runs and shows your game!
 
 ## Where to work
